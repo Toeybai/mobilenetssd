@@ -152,11 +152,11 @@ def event_handle(event,json_line):
         if msg == "สวัสดี":
             replyObj = TextSendMessage(text="เซฮาย")
             line_bot_api.reply_message(rtoken, replyObj)
-        elif msg == "นิ่ง":
-            replyObj = TextSendMessage(text="หรงหรง")
+        elif msg == "วันก่อนครับ":
+            replyObj = TextSendMessage(text="วันนี้แหละครับ")
             line_bot_api.reply_message(rtoken, replyObj)
-        elif msg == "เป็นเก้าอี้":
-            replyObj = TextSendMessage(text="ต้องมีสี่ขา")
+        elif msg == "ปอดเธอมาตลื้ม":
+            replyObj = TextSendMessage(text="ปลื้มเธอมาตลอด")
             line_bot_api.reply_message(rtoken, replyObj)
         elif:
             headers = request.headers
