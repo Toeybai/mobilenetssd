@@ -167,7 +167,7 @@ def event_handle(event,json_line):
         elif msg == "5ชิ้น เป็นราคาทั้งหมด25บาท ไม่รวมค่าส่งนะคะ"
             replyobj = TextSendMessage(text="-สลิปการโอนจ่าย-")
             line_bot_api,reply_message(rtoken, replyObj)
-        elif msg == "ทางเราจะจัดส่งใหเนะคะ ขอบคุณที่มาใช้บริการร้านเรานะคะ!"
+        elif msg == "ทางเราจะจัดส่งให้นะคะ ขอบคุณที่มาใช้บริการร้านเรานะคะ!"
         elif msg == "covid" : 
             url = "https://covid19.ddc.moph.go.th/api/Cases/today-cases-all" 
             response = requests.get(url) 
