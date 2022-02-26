@@ -159,7 +159,7 @@ def event_handle(event,json_line):
             replyObj = TextSendMessage(text="ค่าส่งเท่าไหร่")
             line_bot_api.reply_message(rtoken, replyObj)
         elif msg == "ส่งธรรมดา 35฿  หากส่งแฟลชหรือems ค่าส่ง 45฿ หากคุณลูกค้าสั่ง10ชิ้นขึ้นไปส่งฟรี!""
-            replyObj = TextSendMessage(text="จ่ายผ่านทางไหนได้บ้างคะ")
+            replyObj = TextSendMessage(text="จ่านผ่านทางไหนได้บ้างคะ")
             line_bot_api.reply_message(rtoken, replyObj)
         elif msg == "สามารถจ่ายได้ทาง prompay ที่เบอร์ 088-8888888  และทรูมันนี่วอลเลตที่เบอร์ 088-8888888 ค่ะ ไม่รับค่าส่งปลายทางทุกกรณี!!"  
             replyobj = TextSendMessage(text="ขอสั่ง5ชิ้นค่ะ")
