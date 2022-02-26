@@ -156,8 +156,18 @@ def event_handle(event,json_line):
             replyObj = TextSendMessage(text="ขอดูรายการหน่อย")
             line_bot_api.reply_message(rtoken, replyObj)
         elif msg == "รายการบราวนี่สุดอร่อย!  กล่องเล็ก 4 ชิ้น 29฿  กล่องกลาง 6 ชิ้น 39฿  กล่องใหญ่ 10 ชิ้น 59฿    หากคุณลูกค้าสนใจสั่งพิเศษขั้นต่ำ 4 ชิ้นขึ้นไป ราคาชิ้นละ 5 บาทค่ะ":
-            replyObj = TextSendMessage(text="ปลื้มเธอมาตลอด")
+            replyObj = TextSendMessage(text="ค่าส่งเท่าไหร่")
             line_bot_api.reply_message(rtoken, replyObj)
+        elif msg == "ส่งธรรมดา 35฿  หากส่งแฟลชหรือems ค่าส่ง 45฿ หากคุณลูกค้าสั่ง10ชิ้นขึ้นไปส่งฟรี!""
+            replyobj = TextSendMessage(text="จ่ายทางไหนได้บ้าง")
+            line_bot_api.reply_message(rtoken, replyObj)
+        elif msg == "สามารถจ่ายได้ทาง prompay ที่เบอร์ 088-8888888  และทรูมันนี่วอลเลตที่เบอร์ 088-8888888 ค่ะ ไม่รับค่าส่งปลายทางทุกกรณี!!"  
+            replyobj = TextSendMessage(text="ขอสั่ง5ชิ้นค่ะ")
+            line_bot_api.reply_message(rtoken, replObj)
+        elif msg == "5ชิ้น เป็นราคาทั้งหมด25บาท ไม่รวมค่าส่งนะคะ"
+            replyobj = TextSendMessage(text="-สลิปการโอนจ่าย-")
+            line_bot_api,reply_message(rtoken, replyObj)
+        elif msg == "ทางเราจะจัดส่งใหเนะคะ ขอบคุณที่มาใช้บริการร้านเรานะคะ!"
         elif msg == "covid" : 
             url = "https://covid19.ddc.moph.go.th/api/Cases/today-cases-all" 
             response = requests.get(url) 
