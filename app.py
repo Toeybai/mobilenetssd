@@ -150,12 +150,12 @@ def event_handle(event,json_line):
     if msgType == "text":
         msg = str(event["message"]["text"])
         if msg == "สวัสดี":
-            replyObj = TextSendMessage(text="เซฮาย")
+            replyObj = TextSendMessage(text="สวัสดี")
             line_bot_api.reply_message(rtoken, replyObj)
-        elif msg == "วันก่อนครับ":
-            replyObj = TextSendMessage(text="วันนี้แหละครับ")
+        elif msg == "สวัสดี! ยินดีต้อนรับเข้าสู่ร้านบราวนู่น":
+            replyObj = TextSendMessage(text="ขอดูรายการหน่อย")
             line_bot_api.reply_message(rtoken, replyObj)
-        elif msg == "ปอดเธอมาตลื้ม":
+        elif msg == "รายการบราวนี่สุดอร่อย!  กล่องเล็ก 4 ชิ้น 29฿  กล่องกลาง 6 ชิ้น 39฿  กล่องใหญ่ 10 ชิ้น 59฿    หากคุณลูกค้าสนใจสั่งพิเศษขั้นต่ำ 4 ชิ้นขึ้นไป ราคาชิ้นละ 5 บาทค่ะ":
             replyObj = TextSendMessage(text="ปลื้มเธอมาตลอด")
             line_bot_api.reply_message(rtoken, replyObj)
         elif msg == "covid" : 
